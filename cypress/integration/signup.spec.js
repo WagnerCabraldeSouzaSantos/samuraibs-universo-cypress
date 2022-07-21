@@ -24,9 +24,6 @@ describe('Cadastro', function () {
 
             SignupPage.go()
 
-            cy.contains('a[href="/signup"]', 'Criar conta')
-                .click()
-
             SignupPage.form(user)
 
             SignupPage.submit()
@@ -66,9 +63,6 @@ describe('Cadastro', function () {
             })
 
             SignupPage.go()
-
-            cy.contains('a[href="/signup"]', 'Criar conta')
-                .click()
 
             SignupPage.form(user)
 
